@@ -1,0 +1,39 @@
+/*不透明度效果*/
+._animatedTxt {
+	/* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+	animation-duration: 2s;                          /* 动画时长3秒 */
+	-webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;            /* 播放次数 */
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+._anDelay1 {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+._anDelay4 {
+    animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+}
+
+
+._effect-opacity {
+    animation-name: breath;                         /* 动画名称 */
+    -webkit-animation-name: breath;                 /* 动画名称 */
+}
+
+    @keyframes breath {
+        from { opacity: 0; }                          /* 动画开始时的不透明度 */
+        50%  { opacity:   0.1; }                          /* 动画50% 时的不透明度 */
+        to   { opacity: 1; }                          /* 动画结束时的不透明度 */
+    }
+
+    @-webkit-keyframes breath {
+        from { opacity: 0; }                          /* 动画开始时的不透明度 */
+        50%  { opacity:   0.1; }                          /* 动画50% 时的不透明度 */
+        to   { opacity: 1; }                          /* 动画结束时的不透明度 */
+    }
